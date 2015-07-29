@@ -3,11 +3,12 @@
 import json
 import urllib.request as request # urllib.requests requires python3.
 import requests
-import config
+import private_config as config # Change to config.
 
-""" A small wrapper for Glassdoor's API. See http://stackoverflow.com/questions/30956891/rest-glassdoor-api-requires-user-agent-in-header for some useful info."""
+""" A small wrapper for Glassdoor's API. See http://stackoverflow.com/questions/30956891/rest-glassdoor-api-requires-user-agent-in-header for some useful info.
 
- myIP = '71.238.125.121'
+Make sure you fill in your Glassdoor API credentials in the config.py file."""
+
 PARTNER_ID = config.partnerID
 KEY = config.key
 USERAGENT = "Mozilla/5.0"
